@@ -8,7 +8,7 @@ Below two were major bottlenecks during data integration process.
 - Generate category field to perform cumulative analsis on product category.
 
 Solutions:
-Probabilstic String Matching: Identify semantics that represent the same thing based on probabilistic string matching technique.
+Probabilstic String Matching: Identify semantics that represent the same thing based on probabilistic string matching technique, considering that they have same merchant, brand, weight and primary category .
 (Note: It is neither hashbased nor word pronounce based algorithm. It is a navie attempt to match string based on words)
 
 Cateogry generation: Generates category based on contents of name filed by searching relavant keywords in property file.
