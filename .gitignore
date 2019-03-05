@@ -1,0 +1,4 @@
+
+bdi_spark/.*
+
+bdi_spark/target/*
