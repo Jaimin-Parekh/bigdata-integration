@@ -33,7 +33,7 @@ public class PStringMatchReducer extends Reducer<Text, Text, Text, Text> {
 			inner: for (int j = i + 1; j < nameSize; j++) {
 				if (probableMatch(names.get(i), names.get(j))
 						&& probableMatch(categories.get(i), categories.get(j))) {
-					writeFlag = true;
+					writeFlag = false;
 					break inner;
 				}
 			}
@@ -55,12 +55,13 @@ public class PStringMatchReducer extends Reducer<Text, Text, Text, Text> {
 			if (dest.contains(str))
 				counter1++;
 		}
-		for (String str : dest) {
+		/*for (String str : dest) {
 			if (source.contains(str))
 				counter2++;
-		}
+		}*/
 		if (counter1 > matchCrieterion * source.size()
-				|| counter2 > matchCrieterion * source.size())
+				/*|| counter2 > matchCrieterion * source.size()*/
+			)
 			return true;
 
 		return false;
