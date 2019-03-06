@@ -2,3 +2,7 @@
 bdi_spark/.*
 
 bdi_spark/target/*
+
+bdi_hadoop/.*
+bdi_hadoop/target/*
+
